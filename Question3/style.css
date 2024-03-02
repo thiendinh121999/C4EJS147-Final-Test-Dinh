@@ -1,0 +1,151 @@
+/*Không sử dụng Boostrap*/
+*{
+    background-color: rgb(197, 173, 253);
+}
+
+.totalbox {
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+    height: 600px;
+    width: 50%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.subtotalbox{
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.user{
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar {
+    background-color: white;
+    height: 13%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.searchbar {
+    width: 30%;
+    height: 65%;
+    box-sizing: border-box;
+    border: 2px solid #d4d4d4;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+input{
+    outline: none;
+}
+.search-icon{
+    background-color: white;
+}
+.search-input {
+    color: rgb(44, 43, 43);
+    height: 100%;
+    font-size: 25px;
+}
+
+.search-input > input {
+    background-color: white;
+    height: 100%;
+    border: 0px;
+    border-color:white;
+}
+
+.menu{
+    background-color: white;
+    display: flex;
+    gap: 25px;
+    width: 60%;
+    font-size: 13px;
+    color: #747474;
+}
+.menu-item {
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 10px;
+    border-radius: 7px;
+}
+a {
+    text-decoration: none;
+    color: #747474;
+}
+a:hover.menu-item {
+    background-color: rgb(47, 47, 255);
+    font-weight: bold;
+    color: white;
+}
+.user-list {
+    background-color: white;
+    padding: 20px;
+    flex: 1;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); 
+    grid-auto-rows: 1fr;
+    overflow: auto; 
+  }
+
+.user-item {
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    background-color:#f0f0f0be;
+    padding: 10px;
+}
+
+.user-pic {
+    height: 60px;
+    width: 60px;
+    border-radius:50%;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0be;
+}
+.user-name{
+    gap: 5px;
+    background-color: #f0f0f0be;
+}
+.user-name.h2{
+    background-color: #f0f0f0be;
+}
+.user-name.p{
+    background-color: #f0f0f0be;
+}
+.user-tag-list{
+    background-color: #f0f0f0be;
+    padding: 5px;
+    flex: 1;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /*1fr coó nghĩa là các phần tử có chiều dài rộng đều nhau, không cần dùng minmã trong trường hợp này*/
+    grid-auto-rows: 1fr;
+    overflow: auto;
+}
+.user-tag-item{
+    height: fit-content;
+    width: fit-content;
+    gap: 7px;
+    color: rgb(34, 34, 253);
+    background-color: #f0f0f0be;
+    border: 3px solid #afafafbe;
+    border-radius: 7px;
+}
